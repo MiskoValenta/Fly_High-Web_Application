@@ -1,4 +1,3 @@
-# Fly_High-Web_Application
-##Maturitní projekt "Fly High"
-- Cíl práce: Webová aplikace o zápisech volejbalových zápasů, zapsání hráčů k týmům  ankety k tréninkům a zápasům
+<h1>Maturitní projekt "Fly High"</h1>
+- Cíl práce: Webová aplikace o zápisech volejbalových zápasů, zapsání hráčů k týmům  ankety k tréninkům a zápasům </br>
 - Vedoucí práce: Mgr. Pavlína Mihačová
