@@ -1,0 +1,6 @@
+@fly_high_cs_HostAddress = http://localhost:5008
+
+GET {{fly_high_cs_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
