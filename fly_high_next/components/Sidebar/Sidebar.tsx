@@ -1,33 +1,116 @@
-'use client';
-import {useState} from "react"
-import './Sidebar.css'
+"use client";
 
-const navItems = ["Home", "About", "Contact", "","Login"]
+import React, { useState, useEffect } from "react";
+import "@/app/globals.css";
+import "./Sidebar.css";
+import Image from "next/image";
+import Link from "next/link";
+import Logo from "@/public/ballin.svg";
+import { ThemeToggle } from "@/app/theme-toggle";
+import { Button } from "@/components/ui/button";
+import LoginModal from "@/app/Login/LoginModal";
 
-export const Sidebar = () =>{
+import { IoMenu, IoClose, IoHomeOutline, IoInformationCircleOutline, IoHelpCircleOutline, IoMailOutline, IoListOutline } from "react-icons/io5";
 
+export default function Sidebar() {
     const [isOpen, setIsOpen] = useState(false);
+    const [isLoginOpen, setLoginOpen] = useState(false);
 
-    return(
-        <aside className={`sidebar ${isOpen ? "open" : ""}`}>
-            <div className="inner">
-                <header>
-                    <button type="button" onClick={() => setIsOpen(!isOpen)}>
-                        <span className="material...">
-                            {isOpen ? "close" : "menu"}
-                        </span>
+    // Zablokování scrollování stránky, když je sidebar otevřený
+    useEffect(() => {
+        if (isOpen) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "auto";
+        }
+        return () => { document.body.style.overflow = "auto"; };
+    }, [isOpen]);
+
+    // Funkce pro zavření sidebaru (např. po kliknutí na odkaz)
+    const closeSidebar = () => setIsOpen(false);
+
+    return (
+        <>
+            <button
+                className="SidebarTrigger"
+                onClick={() => setIsOpen(true)}
+                aria-label="Open Menu"
+            >
+                <IoMenu />
+            </button>
+
+            <div
+                className={`SidebarOverlay ${isOpen ? "open" : ""}`}
+                onClick={closeSidebar}
+            />
+
+            <aside className={`SidebarContainer ${isOpen ? "open" : ""}`}>
+
+                <div className="SidebarHeader">
+                    <div className="SidebarBrand" onClick={closeSidebar}>
+                        <Link href="/" className="BrandLink">
+                            <Image src={Logo} alt="Fly High Logo" className="SidebarLogo dark:invert dark:hue-rotate-180" width={32} height={32} />
+                            <span className="BrandName">Fly High</span>
+                        </Link>
+                    </div>
+
+                    <button className="SidebarCloseBtn" onClick={closeSidebar}>
+                        <IoClose />
                     </button>
-                    <img/>
-                </header>
-                    <nav>
-                        {navItems.map(item => (
-                            <button key={item} type="button">
-                                <span className="material...">{item}</span>
-                                <p>{item}</p>
-                            </button>
-                        ))}
-                    </nav>
-            </div>
-        </aside>
-    )
+                </div>
+
+                <nav className="SidebarNav">
+                    <ul className="NavList">
+                        <li>
+                            <Link href="/" className="NavLink" onClick={closeSidebar}>
+                                <IoListOutline className="NavIcon" /> Features
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="/About" className="NavLink" onClick={closeSidebar}>
+                                <IoInformationCircleOutline className="NavIcon" /> About
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="/FAQ" className="NavLink" onClick={closeSidebar}>
+                                <IoHelpCircleOutline className="NavIcon" /> FAQ
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="/Contact" className="NavLink" onClick={closeSidebar}>
+                                <IoMailOutline className="NavIcon" /> Contact
+                            </Link>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div className="SidebarFooter">
+
+                    <div className="FooterItem">
+                        <span className="FooterLabel">Theme</span>
+                        <ThemeToggle />
+                    </div>
+
+                    <div className="FooterItem">
+                        <Button
+                            variant="default"
+                            className="SidebarLoginBtn"
+                            onClick={() => {
+                                closeSidebar();
+                                setLoginOpen(true);
+                            }}
+                        >
+                            Login
+                        </Button>
+                    </div>
+
+                </div>
+            </aside>
+
+            <LoginModal
+                isOpen={isLoginOpen}
+                onClose={() => setLoginOpen(false)}
+            />
+        </>
+    );
 }

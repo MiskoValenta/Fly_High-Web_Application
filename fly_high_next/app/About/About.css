@@ -1,0 +1,339 @@
+.section-container {
+    background: none;
+    padding-block: var(--space-6);
+    color: hsl(var(--foreground));
+    width: 100%;
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ======================================================
+   HERO SECTION
+   ====================================================== */
+.AboutHero {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    padding-bottom: var(--space-4);
+    gap: var(--space-6);
+}
+
+.AboutHero-inner {
+    width: min(var(--container-max), calc(100% - 2 * var(--container-pad)));
+    margin-inline: auto;
+    display: grid;
+    gap: var(--space-6);
+    align-items: start;
+    text-align: center;
+}
+
+.AboutHeading {
+    display: inline-block;
+    font-size: var(--fs-h1);
+    line-height: var(--lh-hero);
+    font-weight: var(--fw-hero);
+    letter-spacing: var(--ls-tight);
+    margin: 0;
+    color: var(--typo-heading-color);
+    text-shadow: var(--hero-text-shadow);
+}
+
+.AboutSubHeading {
+    font-size: var(--lead);
+    line-height: var(--lh-body);
+    color: var(--typo-subheading-color);
+    max-width: 800px;
+    margin-inline: auto;
+}
+
+/* ======================================================
+   TOP GRID (Pro týmy / Pro trenéry / Pro hráče)
+   ====================================================== */
+.AboutGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-3);
+    margin-top: var(--space-4);
+}
+
+/* ======================================================
+   GLASS CARDS (Generic styles)
+   ====================================================== */
+.AboutCard {
+    padding: var(--space-4);
+    border-radius: var(--radius-md);
+    min-height: 160px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    align-items: flex-start;
+    justify-content: center;
+    box-sizing: border-box;
+
+    background: var(--glassed-gradient);
+    border: var(--glassed-border);
+    -webkit-backdrop-filter: var(--glassed-webkit-backdrop-filter);
+    backdrop-filter: var(--glassed-backdrop-filter);
+    box-shadow: var(--glassed-box-shadow);
+    color: var(--glassed-color);
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.AboutCard h3 {
+    margin: 0;
+    font-size: var(--fs-h3);
+    font-weight: var(--fw-heading);
+    letter-spacing: var(--ls-tight);
+    color: var(--typo-heading-color);
+}
+
+.AboutCard p {
+    margin: 0;
+    font-size: var(--body);
+    line-height: var(--lh-body);
+    color: var(--typo-ghost-color);
+    opacity: 0.95;
+}
+
+/* ======================================================
+   MIDDLE SECTION: "Proč tato aplikace vznikla"
+   (AboutCardsRow + AboutRowGrid)
+   ====================================================== */
+
+.AboutCardsRow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: var(--container-max);
+    margin-inline: auto;
+    padding-inline: var(--container-pad);
+    padding-block: var(--space-6);
+    gap: var(--space-6);
+}
+
+.AboutRowGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-4);
+    width: 100%;
+    align-items: flex-start;
+    margin-top: var(--space-5);
+}
+
+.AboutRowGrid .AboutCard {
+    position: relative;
+    justify-content: flex-start;
+
+    height: auto;
+
+    max-height: 220px;
+
+    min-height: 220px;
+
+    overflow: hidden;
+    cursor: default;
+
+    transition: max-height 0.6s cubic-bezier(.25, 1, .5, 1),
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.AboutRowGrid .AboutCard:nth-child(2) {
+    margin-top: var(--space-6);
+}
+
+.AboutRowGrid .AboutCard::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 80px;
+    background: linear-gradient(to bottom, transparent, rgba(var(--card), 0.8));
+    pointer-events: none;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.AboutRowGrid .AboutCard:hover,
+.AboutRowGrid .AboutCard:focus-within {
+    max-height: 800px;
+
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    z-index: 10;
+}
+
+.AboutRowGrid .AboutCard:hover::after {
+    opacity: 0;
+}
+
+.AboutRowGrid .AboutCard h3 {
+    text-align: center;
+    width: 100%;
+    margin-bottom: var(--space-2);
+}
+
+.AboutRowGrid .AboutCard p {
+    text-align: center;
+}
+
+
+/* ======================================================
+   ICON GRID (Bottom Section)
+   ====================================================== */
+.AboutCardGrid{
+    display: grid;
+    align-items: start;
+    justify-content: center;
+    padding-block: var(--space-4);
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-3);
+    margin-inline: auto;
+    width: 100%;
+    max-width: var(--container-max);
+    overflow: visible;
+}
+
+.AboutCardGridWindow {
+    position: relative;
+    display: grid;
+    grid-template-rows: auto auto;
+    align-items: start;
+    justify-items: center;
+    gap: var(--space-3);
+
+    width: 100%;
+    max-width: 220px;
+    height: 220px;
+    padding: var(--space-4);
+    margin-inline: auto;
+
+    background-color: var(--glassed-gradient);
+    border: var(--glassed-border);
+    border-radius: var(--radius-md);
+    -webkit-backdrop-filter: var(--glassed-webkit-backdrop-filter);
+    backdrop-filter: var(--glassed-backdrop-filter);
+    box-shadow: var(--glassed-box-shadow);
+
+    overflow: visible;
+    cursor: pointer;
+
+    --reveal-h: 84px;
+    transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.AboutCardGridWindow:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+    z-index: 30;
+}
+
+.IconCard {
+    grid-row: 1;
+    justify-self: center;
+    align-self: start;
+    font-size: 2.5rem;
+    padding: var(--space-2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--typo-heading-color);
+}
+
+.AboutGridText {
+    grid-row: 2;
+    font-size: var(--fs-h5);
+    line-height: var(--lh-heading);
+    font-weight: var(--fw-sub);
+    color: var(--typo-heading-color);
+    text-align: center;
+    margin: 0;
+}
+
+.HoverText {
+    position: absolute;
+    left: 4px;
+    right: 4px;
+    bottom: calc(-1 * var(--reveal-h) - 4px);
+    height: var(--reveal-h);
+    padding: var(--space-3);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--card);
+    border: 1px solid var(--border);
+    color: var(--muted-foreground);
+    font-size: var(--small);
+    line-height: var(--lh-body);
+    text-align: center;
+    border-radius: var(--radius-md);
+    box-shadow: var(--glass-shadow);
+
+    transform: translateY(10px);
+    opacity: 0;
+    transition: transform 260ms cubic-bezier(.2,.9,.2,1), opacity 200ms ease;
+    pointer-events: none;
+    z-index: 40;
+}
+
+.AboutCardGridWindow:hover .HoverText,
+.AboutCardGridWindow:focus-within .HoverText {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* ======================================================
+   RESPONSIVE
+   ====================================================== */
+@media (max-width: 900px) {
+    .AboutGrid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        margin-inline: auto;
+    }
+
+    .AboutRowGrid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        gap: var(--space-3);
+    }
+
+    .AboutRowGrid .AboutCard:nth-child(2) {
+        margin-top: 0;
+    }
+
+    .AboutRowGrid .AboutCard {
+        height: auto;
+        min-height: auto;
+        max-height: none;
+        overflow: visible;
+    }
+
+    .AboutRowGrid .AboutCard::after {
+        display: none;
+    }
+
+    .AboutRowGrid .AboutCard:hover {
+        transform: none;
+    }
+
+    .AboutCardGrid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .AboutCardGrid {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+}

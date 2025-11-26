@@ -1,39 +1,63 @@
 'use client';
-import "./Navbar.css"
-import { Button } from "@/components/ui/button"
+
+import { useState } from "react";
+import "./Navbar.css";
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
-import Logo from "@/public/ballin.svg"
+import Logo from "@/public/ballin.svg";
+import { ThemeToggle } from "@/app/theme-toggle";
+import LoginModal from "@/app/Login/LoginModal";
+import Sidebar from "@/components/Sidebar/Sidebar";
 
 export const Navbar = () => {
+
+    const [isLoginOpen, setLoginOpen] = useState(false);
+
     return (
-        <nav className="navbar">
-            <div className="container">
+        <>
+            <nav className="navbar">
+                <div className="container">
 
-                {/* Levá část */}
-                <div className="navbar-brand">
-                    <a href={"/"}><Image className="brand-logo dark:invert dark:hue-rotate-180" src={Logo} alt="Logo" /></a>
-                    <Link className="brand-name" href="/">Fly High</Link>
+                    <div className="navbar-brand">
+                        <a href={"/"}>
+                            <Image className="brand-logo dark:invert dark:hue-rotate-180" src={Logo} alt="Logo" />
+                        </a>
+                        <Link className="brand-name" href="/">Fly High</Link>
+                    </div>
+
+                    <div className="navbar-menu">
+                        <ul>
+                            <li><Link href="/Features">Features</Link></li>
+                            <li><Link href='/About'>About</Link></li>
+                            <li><Link href="/FAQ">FAQ</Link></li>
+                            <li><Link href="/Contact">Contact</Link></li>
+                        </ul>
+                    </div>
+
+                    <div className="navbar-login">
+                        <ThemeToggle/>
+
+                        <Button
+                            variant="default"
+                            className="navbar-login-button"
+                            onClick={() => setLoginOpen(true)}
+                        >
+                            Login
+                        </Button>
+                    </div>
+
                 </div>
+            </nav>
 
-                {/* Střední část - styly jsou nyní v CSS */}
-                <div className="navbar-menu">
-                    <ul>
-                        <li><Link href="/">Features</Link></li>
-                        <li><Link href="/">About</Link></li>
-                        <li><Link href="/">FAQ</Link></li>
-                        <li><Link href="/">Contact</Link></li>
-                    </ul>
-                </div>
+            <LoginModal
+                isOpen={isLoginOpen}
+                onClose={() => setLoginOpen(false)}
+            />
 
-                {/* Pravá část */}
-                <div className="navbar-login">
-                    <Button variant="default">
-                        Login
-                    </Button>
-                </div>
-
+            <div className="navbar-sidebar">
+                <Sidebar />
             </div>
-        </nav>
+        </>
     );
 }

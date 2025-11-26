@@ -1,39 +1,32 @@
-import { IoLogoInstagram, IoLogoChrome, IoLogoPolymer } from "react-icons/io";
+import { IoLogoInstagram, IoLogoChrome } from "react-icons/io";
 import { IoLogoFacebook } from "react-icons/io5";
 import Link from "next/link";
 import Image from "next/image";
 import "./Footer.css";
-import Logo from "@/public/volleyball_logo_inverted.svg";
+import Logo from "@/public/ballin.svg";
 
 export const Footer = () => {
 
+    const current_year = new Date().getFullYear();
+
     return(
         <footer>
-            <Image width={30} height={30} className="Logo" src={Logo} alt="Logo"/>
-            <div className="socials">
-                <a href="https://www.instagram.com/oaasoslopava"><IoLogoInstagram/></a>
-                <a href="https://www.facebook.com/oa.sosl.opava"><IoLogoFacebook/></a>
-                <a href="https://open.spotify.com/show/7oLGNL97NPOdC2cLRbrtAu"><IoLogoPolymer className="rotate-90"></IoLogoPolymer></a>
-                <a href="https://www.oa-opava.cz"><IoLogoChrome/></a>
-            </div>
-            <div className="links">
-                <ul>
-                    <li>
-                        <Link href="#">
-                            Home
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href="#">
-                            About
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href="#">
-                            Contact
-                        </Link>
-                    </li>
-                </ul>
+            <div className="footer-container">
+                <div className="footer-brand">
+                    <Image src={Logo} alt="Fly High Logo" className="footer-brand-logo"></Image>
+                    <h1 className="footer-brand-name">FLy High</h1>
+                </div>
+                <div className="footer-menu">
+                    <p>Copyright © {current_year}</p>
+                    <p>Maturitní Práce</p>
+                    <p>D22623@oaopava.cz</p>
+                </div>
+                <div className="footer-socials">
+                    <Link href="/"><IoLogoInstagram></IoLogoInstagram></Link>
+                    <Link href="/"><IoLogoFacebook></IoLogoFacebook></Link>
+                    <Link href="/"><IoLogoChrome></IoLogoChrome></Link>
+
+                </div>
             </div>
         </footer>
     )
