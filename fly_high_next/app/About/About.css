@@ -73,7 +73,7 @@
     justify-content: center;
     box-sizing: border-box;
 
-    background: var(--glassed-gradient);
+    background: var(--background);
     border: var(--glassed-border);
     -webkit-backdrop-filter: var(--glassed-webkit-backdrop-filter);
     backdrop-filter: var(--glassed-backdrop-filter);
@@ -214,7 +214,7 @@
     padding: var(--space-4);
     margin-inline: auto;
 
-    background-color: var(--glassed-gradient);
+    background: var(--background);
     border: var(--glassed-border);
     border-radius: var(--radius-md);
     -webkit-backdrop-filter: var(--glassed-webkit-backdrop-filter);
@@ -239,16 +239,18 @@
     justify-self: center;
     align-self: start;
     font-size: 2.5rem;
-    padding: var(--space-2);
+    padding: var(--space-4);
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--typo-heading-color);
+    box-shadow: var(--glassed-box-shadow);
+    border-radius: var(--radius-md);
 }
 
 .AboutGridText {
     grid-row: 2;
-    font-size: var(--fs-h5);
+    font-size: var(--fs-h4);
     line-height: var(--lh-heading);
     font-weight: var(--fw-sub);
     color: var(--typo-heading-color);
@@ -294,28 +296,57 @@
 /* ======================================================
    RESPONSIVE
    ====================================================== */
-@media (max-width: 900px) {
-    .AboutGrid {
-        grid-template-columns: 1fr;
-        max-width: 500px;
-        margin-inline: auto;
-    }
-
-    .AboutRowGrid {
-        grid-template-columns: 1fr;
-        max-width: 500px;
+/* 1. Tablet / Laptop (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .AboutGrid, .AboutRowGrid {
         gap: var(--space-3);
     }
 
+    .AboutCardGrid {
+        gap: var(--space-2);
+    }
+}
+
+/* 2. Mobile / Tablets (max-width: 900px) */
+@media (max-width: 900px) {
+    .AboutHero-inner,
+    .AboutCardsRow {
+        width: 100%;
+        padding-inline: var(--space-4);
+        box-sizing: border-box;
+    }
+
+    /* Stack the top section */
+    .AboutGrid {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+        margin-inline: auto;
+        width: 100%;
+        gap: var(--space-3);
+    }
+
+    /* Stack the "Why this app" section */
+    .AboutRowGrid {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+        margin-inline: auto;
+        gap: var(--space-3);
+        margin-top: var(--space-4);
+    }
+
+    /* CRITICAL FIX: Remove staggering effect causing overlaps */
     .AboutRowGrid .AboutCard:nth-child(2) {
         margin-top: 0;
     }
 
+    /* DISABLE HOVER EXPANSION & OVERLAYS ON MOBILE */
     .AboutRowGrid .AboutCard {
-        height: auto;
-        min-height: auto;
-        max-height: none;
+        height: auto !important;
+        min-height: auto !important;
+        max-height: none !important;
         overflow: visible;
+        pointer-events: auto; /* Allow clicking/selecting text */
+        margin-bottom: 0;
     }
 
     .AboutRowGrid .AboutCard::after {
@@ -324,16 +355,86 @@
 
     .AboutRowGrid .AboutCard:hover {
         transform: none;
+        box-shadow: var(--glassed-box-shadow);
     }
 
+    /* Icon Grid: 2x2 */
     .AboutCardGrid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        max-width: 600px;
+        gap: var(--space-3);
+    }
+
+    .AboutCardGridWindow {
+        max-width: 100%;
+        width: 100%;
     }
 }
 
-@media (max-width: 600px) {
+/* 3. Small Phones (max-width: 480px) */
+@media (max-width: 480px) {
+    .AboutHero-inner,
+    .AboutCardsRow,
     .AboutCardGrid {
+        padding-inline: var(--space-3); /* Less padding on sides */
+    }
+
+    /* Ensure content takes full width */
+    .AboutGrid,
+    .AboutRowGrid,
+    .AboutCardGrid {
+        max-width: 100%;
+    }
+
+    .AboutCardGrid {
+        /* On narrow screens, 2 cols might be too tight, check card content */
         grid-template-columns: 1fr;
-        justify-items: center;
+        gap: var(--space-3);
+    }
+
+    .AboutCardGridWindow {
+        height: auto;
+        min-height: 140px; /* Reduced from 160px */
+        /* Center content vertically */
+        align-content: center;
+        padding: var(--space-3); /* Reduced padding */
+    }
+
+    .HoverText {
+        display: none;
+    }
+
+    /* Fix font sizes for headers on small screens */
+    .AboutHeading {
+        font-size: 1.75rem;
+        line-height: 0; /* Tighter line height */
+    }
+}
+
+/* 4. Extra Small Phones (max-width: 350px) */
+@media (max-width: 350px) {
+    .AboutHero-inner,
+    .AboutCardsRow {
+        padding-inline: var(--space-2);
+    }
+
+    .AboutCard {
+        padding: var(--space-3); /* Reduce internal card padding */
+    }
+
+    .AboutHeading {
+        font-size: 1.5rem;
+        line-height: 1.1; /* Even tighter for very small screens */
+    }
+
+    .AboutCardGridWindow {
+        min-height: 120px; /* Even smaller windows */
+        padding: var(--space-2);
+    }
+
+    .IconCard {
+        font-size: 2rem;
+        padding: var(--space-2);
     }
 }

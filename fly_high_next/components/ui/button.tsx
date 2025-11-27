@@ -10,7 +10,7 @@ const buttonVariants = cva(
         variants: {
             variant: {
                 default:
-                    "[background:var(--glassed-gradient)] [border:var(--glassed-border)] shadow-[var(--glassed-box-shadow)] [backdrop-filter:var(--glassed-backdrop-filter)] text-[var(--glassed-color)] hover:brightness-110 active:scale-95",
+                    "cursor-pointer [background:var(--glassed-gradient)] [border:var(--glassed-border)] shadow-[var(--glassed-box-shadow)] [backdrop-filter:var(--glassed-backdrop-filter)] text-[var(--glassed-color)] hover:brightness-110 active:scale-95",
                 destructive:
                     "bg-destructive text-white hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60",
                 outline:

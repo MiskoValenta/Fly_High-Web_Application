@@ -62,7 +62,7 @@ export default function Sidebar() {
                 <nav className="SidebarNav">
                     <ul className="NavList">
                         <li>
-                            <Link href="/" className="NavLink" onClick={closeSidebar}>
+                            <Link href="/Features" className="NavLink" onClick={closeSidebar}>
                                 <IoListOutline className="NavIcon" /> Features
                             </Link>
                         </li>

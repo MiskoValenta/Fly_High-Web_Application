@@ -207,7 +207,7 @@
     --orb-3: 340 48% 36%;
     --orb-4: 352 91% 59%;
 
-    --background: 0 0% 10%;
+    --background: rgba(0, 0, 0, 0.2);
     --foreground: 210 40% 98%;
 
     --card: 222.2 84% 4.9%;
@@ -271,8 +271,21 @@
     flex-direction: column;
 }
 
+::-webkit-scrollbar{width:10px;}
 
+::-webkit-scrollbar-track {
+    background:var(--background);
+    border-radius:var(--radius-md);
+}
 
+::-webkit-scrollbar-thumb {
+    background:#38bdf8;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background:var(--color-orb-4);
+}
 
 .brand-logo [theme="dark"] {
     filter: invert(1) hue-rotate(180deg);
