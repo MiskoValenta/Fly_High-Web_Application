@@ -22,7 +22,7 @@ export default function Hero() {
     const [isLoginOpen, setLoginOpen] = useState(false);
 
     return (
-        <section className="HeroSection">
+        <section className="section-container">
 
             <div className="HeroBackground">
 

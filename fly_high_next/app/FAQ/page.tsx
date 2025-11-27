@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import "@/app/globals.css";
 import "./FAQ.css";
 
-import { IoChevronDown, IoChevronUp, IoSparkles } from "react-icons/io5";
+import { IoChevronDown, IoChevronUp } from "react-icons/io5";
 
 type FaqItem = {
     question: string;
@@ -120,9 +120,6 @@ export default function FAQ() {
                     <div className="FaqCategoryCard">
 
                         <div className="CategoryHeader">
-                            <div className="IconBox">
-                                <IoSparkles />
-                            </div>
                             <h2>{category.title}</h2>
                         </div>
 

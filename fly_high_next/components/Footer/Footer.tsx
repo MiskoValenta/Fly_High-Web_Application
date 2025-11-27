@@ -1,5 +1,5 @@
-import { IoLogoInstagram, IoLogoChrome } from "react-icons/io";
-import { IoLogoFacebook } from "react-icons/io5";
+import {IoLogoInstagram, IoLogoChrome} from "react-icons/io";
+import {IoLogoFacebook} from "react-icons/io5";
 import Link from "next/link";
 import Image from "next/image";
 import "./Footer.css";
@@ -9,7 +9,7 @@ export const Footer = () => {
 
     const current_year = new Date().getFullYear();
 
-    return(
+    return (
         <footer>
             <div className="footer-container">
                 <div className="footer-brand">
@@ -18,8 +18,8 @@ export const Footer = () => {
                 </div>
                 <div className="footer-menu">
                     <p>Copyright © {current_year}</p>
-                    <p>Maturitní Práce</p>
-                    <p>D22623@oaopava.cz</p>
+                    <p><a href="/FAQ">Maturitní Práce</a></p>
+                    <p><a href="mailto:d22623@oaopava.cz">d22623@oaopava.cz</a></p>
                 </div>
                 <div className="footer-socials">
                     <Link href="/"><IoLogoInstagram></IoLogoInstagram></Link>
