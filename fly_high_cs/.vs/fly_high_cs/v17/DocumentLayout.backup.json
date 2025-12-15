@@ -1,12 +1,37 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "B:\\Fly_High-Web_Application\\fly_high_cs\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0B060136-442F-49BD-921C-EE8B10B5C1B7}|fly_high_cs.csproj|b:\\fly_high-web_application\\fly_high_cs\\data\\volleyballdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B060136-442F-49BD-921C-EE8B10B5C1B7}|fly_high_cs.csproj|solutionrelative:data\\volleyballdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VolleyballDbContext.cs",
+              "DocumentMoniker": "B:\\Fly_High-Web_Application\\fly_high_cs\\Data\\VolleyballDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\VolleyballDbContext.cs",
+              "ToolTip": "B:\\Fly_High-Web_Application\\fly_high_cs\\Data\\VolleyballDbContext.cs",
+              "RelativeToolTip": "Data\\VolleyballDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T13:33:37.554Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
