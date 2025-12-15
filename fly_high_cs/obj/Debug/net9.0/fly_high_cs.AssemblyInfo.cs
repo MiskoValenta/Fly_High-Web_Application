@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("793284ea-49e5-446b-a43f-e9a431839628")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("fly_high_cs")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ae7c105f5704ab3e0104f17d80f8ba7ecb5dd05a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f33f703d898b8fb9130d7b725d43a3e8e04a6e83")]
 [assembly: System.Reflection.AssemblyProductAttribute("fly_high_cs")]
 [assembly: System.Reflection.AssemblyTitleAttribute("fly_high_cs")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
