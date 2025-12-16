@@ -7,6 +7,8 @@
         public int SetNumber { get; set; }
         public int HomeScore { get; set; }
         public int AwayScore { get; set; }
-        public string Notes { get; set; }
+        public string? Notes { get; set; }
+
+        public Match Match { get; set; } = null!;
     }
 }

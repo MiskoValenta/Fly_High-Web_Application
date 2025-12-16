@@ -32,4 +32,10 @@
         Universal,
         Libero
     }
+    public enum  AuditActions
+    {
+        Create = 1,
+        Update = 2,
+        Delete = 3
+    }
 }
