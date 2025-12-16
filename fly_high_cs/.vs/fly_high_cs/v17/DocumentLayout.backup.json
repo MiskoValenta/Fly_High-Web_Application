@@ -3,8 +3,44 @@
   "WorkspaceRootPath": "B:\\Fly_High-Web_Application\\fly_high_cs\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0B060136-442F-49BD-921C-EE8B10B5C1B7}|fly_high_cs.csproj|b:\\fly_high-web_application\\fly_high_cs\\models\\match.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B060136-442F-49BD-921C-EE8B10B5C1B7}|fly_high_cs.csproj|solutionrelative:models\\match.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B060136-442F-49BD-921C-EE8B10B5C1B7}|fly_high_cs.csproj|b:\\fly_high-web_application\\fly_high_cs\\models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B060136-442F-49BD-921C-EE8B10B5C1B7}|fly_high_cs.csproj|solutionrelative:models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B060136-442F-49BD-921C-EE8B10B5C1B7}|fly_high_cs.csproj|b:\\fly_high-web_application\\fly_high_cs\\models\\enums\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B060136-442F-49BD-921C-EE8B10B5C1B7}|fly_high_cs.csproj|solutionrelative:models\\enums\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B060136-442F-49BD-921C-EE8B10B5C1B7}|fly_high_cs.csproj|b:\\fly_high-web_application\\fly_high_cs\\models\\team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B060136-442F-49BD-921C-EE8B10B5C1B7}|fly_high_cs.csproj|solutionrelative:models\\team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0B060136-442F-49BD-921C-EE8B10B5C1B7}|fly_high_cs.csproj|b:\\fly_high-web_application\\fly_high_cs\\data\\volleyballdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0B060136-442F-49BD-921C-EE8B10B5C1B7}|fly_high_cs.csproj|solutionrelative:data\\volleyballdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B060136-442F-49BD-921C-EE8B10B5C1B7}|fly_high_cs.csproj|b:\\fly_high-web_application\\fly_high_cs\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B060136-442F-49BD-921C-EE8B10B5C1B7}|fly_high_cs.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B060136-442F-49BD-921C-EE8B10B5C1B7}|fly_high_cs.csproj|b:\\fly_high-web_application\\fly_high_cs\\models\\teammember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B060136-442F-49BD-921C-EE8B10B5C1B7}|fly_high_cs.csproj|solutionrelative:models\\teammember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B060136-442F-49BD-921C-EE8B10B5C1B7}|fly_high_cs.csproj|b:\\fly_high-web_application\\fly_high_cs\\models\\matchset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B060136-442F-49BD-921C-EE8B10B5C1B7}|fly_high_cs.csproj|solutionrelative:models\\matchset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B060136-442F-49BD-921C-EE8B10B5C1B7}|fly_high_cs.csproj|b:\\fly_high-web_application\\fly_high_cs\\models\\eventparticipant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B060136-442F-49BD-921C-EE8B10B5C1B7}|fly_high_cs.csproj|solutionrelative:models\\eventparticipant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B060136-442F-49BD-921C-EE8B10B5C1B7}|fly_high_cs.csproj|b:\\fly_high-web_application\\fly_high_cs\\models\\matchroster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B060136-442F-49BD-921C-EE8B10B5C1B7}|fly_high_cs.csproj|solutionrelative:models\\matchroster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +50,136 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Team.cs",
+              "DocumentMoniker": "B:\\Fly_High-Web_Application\\fly_high_cs\\Models\\Team.cs",
+              "RelativeDocumentMoniker": "Models\\Team.cs",
+              "ToolTip": "B:\\Fly_High-Web_Application\\fly_high_cs\\Models\\Team.cs",
+              "RelativeToolTip": "Models\\Team.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T12:39:06.356Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MatchSet.cs",
+              "DocumentMoniker": "B:\\Fly_High-Web_Application\\fly_high_cs\\Models\\MatchSet.cs",
+              "RelativeDocumentMoniker": "Models\\MatchSet.cs",
+              "ToolTip": "B:\\Fly_High-Web_Application\\fly_high_cs\\Models\\MatchSet.cs",
+              "RelativeToolTip": "Models\\MatchSet.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T12:49:20.24Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Match.cs",
+              "DocumentMoniker": "B:\\Fly_High-Web_Application\\fly_high_cs\\Models\\Match.cs",
+              "RelativeDocumentMoniker": "Models\\Match.cs",
+              "ToolTip": "B:\\Fly_High-Web_Application\\fly_high_cs\\Models\\Match.cs",
+              "RelativeToolTip": "Models\\Match.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T12:47:25.648Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TeamMember.cs",
+              "DocumentMoniker": "B:\\Fly_High-Web_Application\\fly_high_cs\\Models\\TeamMember.cs",
+              "RelativeDocumentMoniker": "Models\\TeamMember.cs",
+              "ToolTip": "B:\\Fly_High-Web_Application\\fly_high_cs\\Models\\TeamMember.cs",
+              "RelativeToolTip": "Models\\TeamMember.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T12:42:25.506Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "User.cs",
+              "DocumentMoniker": "B:\\Fly_High-Web_Application\\fly_high_cs\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "B:\\Fly_High-Web_Application\\fly_high_cs\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T12:36:38.866Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "VolleyballDbContext.cs",
               "DocumentMoniker": "B:\\Fly_High-Web_Application\\fly_high_cs\\Data\\VolleyballDbContext.cs",
               "RelativeDocumentMoniker": "Data\\VolleyballDbContext.cs",
               "ToolTip": "B:\\Fly_High-Web_Application\\fly_high_cs\\Data\\VolleyballDbContext.cs",
               "RelativeToolTip": "Data\\VolleyballDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBYAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-11T13:33:37.554Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Event.cs",
+              "DocumentMoniker": "B:\\Fly_High-Web_Application\\fly_high_cs\\Models\\Event.cs",
+              "RelativeDocumentMoniker": "Models\\Event.cs",
+              "ToolTip": "B:\\Fly_High-Web_Application\\fly_high_cs\\Models\\Event.cs",
+              "RelativeToolTip": "Models\\Event.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T12:53:47.617Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Enums.cs",
+              "DocumentMoniker": "B:\\Fly_High-Web_Application\\fly_high_cs\\Models\\Enums\\Enums.cs",
+              "RelativeDocumentMoniker": "Models\\Enums\\Enums.cs",
+              "ToolTip": "B:\\Fly_High-Web_Application\\fly_high_cs\\Models\\Enums\\Enums.cs",
+              "RelativeToolTip": "Models\\Enums\\Enums.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T12:57:23.694Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EventParticipant.cs",
+              "DocumentMoniker": "B:\\Fly_High-Web_Application\\fly_high_cs\\Models\\EventParticipant.cs",
+              "RelativeDocumentMoniker": "Models\\EventParticipant.cs",
+              "ToolTip": "B:\\Fly_High-Web_Application\\fly_high_cs\\Models\\EventParticipant.cs",
+              "RelativeToolTip": "Models\\EventParticipant.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T12:56:08.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MatchRoster.cs",
+              "DocumentMoniker": "B:\\Fly_High-Web_Application\\fly_high_cs\\Models\\MatchRoster.cs",
+              "RelativeDocumentMoniker": "Models\\MatchRoster.cs",
+              "ToolTip": "B:\\Fly_High-Web_Application\\fly_high_cs\\Models\\MatchRoster.cs",
+              "RelativeToolTip": "Models\\MatchRoster.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T12:51:36.802Z",
               "EditorCaption": ""
             }
           ]
