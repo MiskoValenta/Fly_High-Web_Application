@@ -85,7 +85,7 @@ namespace fly_high_cs.Data
 
         private void ApplyAuditAndSoftDelete()
         {
-            // Soft delete & audit dohromady -> aka. nic se nemůže smazat "Hard Delete"
+            // Soft delete & audit dohromady -> aka. nic se nemůže smazat s "Hard Delete"
             ChangeTracker.DetectChanges();
             var now = DateTime.UtcNow;
             var userId = _currentUserService?.UserId;
@@ -129,7 +129,7 @@ namespace fly_high_cs.Data
                 var audit = new AuditLog
                 {
                     EntityName = entry.Entity.GetType().Name,
-                    EntityId = entity.Id,
+                    EntityId = entity.BaseEntityId,
                     Action = entry.State switch
                     {
                         EntityState.Added => AuditActions.Create,

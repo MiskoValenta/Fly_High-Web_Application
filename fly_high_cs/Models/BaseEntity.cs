@@ -4,7 +4,7 @@ namespace fly_high_cs.Models
 {
     public abstract class BaseEntity : ISoftDelete, IAuditable, IDeletable
     {
-        public int Id { get; set; }
+        public int BaseEntityId { get; set; }
 
         // Soft Delete
         public bool IsDeleted { get; set; }

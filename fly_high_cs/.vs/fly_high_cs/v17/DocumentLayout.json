@@ -1,12 +1,117 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "B:\\Fly_High-Web_Application\\fly_high_cs\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0B060136-442F-49BD-921C-EE8B10B5C1B7}|fly_high_cs.csproj|b:\\fly_high-web_application\\fly_high_cs\\data\\volleyballdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B060136-442F-49BD-921C-EE8B10B5C1B7}|fly_high_cs.csproj|solutionrelative:data\\volleyballdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B060136-442F-49BD-921C-EE8B10B5C1B7}|fly_high_cs.csproj|b:\\fly_high-web_application\\fly_high_cs\\models\\eventparticipant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B060136-442F-49BD-921C-EE8B10B5C1B7}|fly_high_cs.csproj|solutionrelative:models\\eventparticipant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B060136-442F-49BD-921C-EE8B10B5C1B7}|fly_high_cs.csproj|b:\\fly_high-web_application\\fly_high_cs\\models\\team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B060136-442F-49BD-921C-EE8B10B5C1B7}|fly_high_cs.csproj|solutionrelative:models\\team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B060136-442F-49BD-921C-EE8B10B5C1B7}|fly_high_cs.csproj|b:\\fly_high-web_application\\fly_high_cs\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B060136-442F-49BD-921C-EE8B10B5C1B7}|fly_high_cs.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B060136-442F-49BD-921C-EE8B10B5C1B7}|fly_high_cs.csproj|b:\\fly_high-web_application\\fly_high_cs\\models\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B060136-442F-49BD-921C-EE8B10B5C1B7}|fly_high_cs.csproj|solutionrelative:models\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B060136-442F-49BD-921C-EE8B10B5C1B7}|fly_high_cs.csproj|b:\\fly_high-web_application\\fly_high_cs\\models\\auditlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B060136-442F-49BD-921C-EE8B10B5C1B7}|fly_high_cs.csproj|solutionrelative:models\\auditlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EventParticipant.cs",
+              "DocumentMoniker": "B:\\Fly_High-Web_Application\\fly_high_cs\\Models\\EventParticipant.cs",
+              "RelativeDocumentMoniker": "Models\\EventParticipant.cs",
+              "ToolTip": "B:\\Fly_High-Web_Application\\fly_high_cs\\Models\\EventParticipant.cs",
+              "RelativeToolTip": "Models\\EventParticipant.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T10:31:45.181Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Team.cs",
+              "DocumentMoniker": "B:\\Fly_High-Web_Application\\fly_high_cs\\Models\\Team.cs",
+              "RelativeDocumentMoniker": "Models\\Team.cs",
+              "ToolTip": "B:\\Fly_High-Web_Application\\fly_high_cs\\Models\\Team.cs",
+              "RelativeToolTip": "Models\\Team.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T10:31:40.501Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "User.cs",
+              "DocumentMoniker": "B:\\Fly_High-Web_Application\\fly_high_cs\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "B:\\Fly_High-Web_Application\\fly_high_cs\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T10:22:17.068Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "B:\\Fly_High-Web_Application\\fly_high_cs\\Models\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "Models\\BaseEntity.cs",
+              "ToolTip": "B:\\Fly_High-Web_Application\\fly_high_cs\\Models\\BaseEntity.cs",
+              "RelativeToolTip": "Models\\BaseEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T09:44:03.3Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AuditLog.cs",
+              "DocumentMoniker": "B:\\Fly_High-Web_Application\\fly_high_cs\\Models\\AuditLog.cs",
+              "RelativeDocumentMoniker": "Models\\AuditLog.cs",
+              "ToolTip": "B:\\Fly_High-Web_Application\\fly_high_cs\\Models\\AuditLog.cs",
+              "RelativeToolTip": "Models\\AuditLog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T09:44:02.746Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VolleyballDbContext.cs",
+              "DocumentMoniker": "B:\\Fly_High-Web_Application\\fly_high_cs\\Data\\VolleyballDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\VolleyballDbContext.cs",
+              "ToolTip": "B:\\Fly_High-Web_Application\\fly_high_cs\\Data\\VolleyballDbContext.cs",
+              "RelativeToolTip": "Data\\VolleyballDbContext.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA8wAwAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T16:45:34.634Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
