@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("fly_high_cs")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5e550e7f09d3ebdb0737228b43f36c3077b5e70c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+16146a7b4049cb96cd24bdf4b5a2bddf5afed820")]
 [assembly: System.Reflection.AssemblyProductAttribute("fly_high_cs")]
 [assembly: System.Reflection.AssemblyTitleAttribute("fly_high_cs")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
