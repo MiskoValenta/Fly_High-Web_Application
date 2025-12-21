@@ -1,12 +1,230 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "B:\\Fly_High-Web_Application\\FlyHigh\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0C5F7DFD-8C53-4294-B21E-5EF1912E2CBF}|Domain\\Domain.csproj|b:\\fly_high-web_application\\flyhigh\\domain\\matches\\match.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C5F7DFD-8C53-4294-B21E-5EF1912E2CBF}|Domain\\Domain.csproj|solutionrelative:domain\\matches\\match.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C5F7DFD-8C53-4294-B21E-5EF1912E2CBF}|Domain\\Domain.csproj|b:\\fly_high-web_application\\flyhigh\\domain\\matches\\matchset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C5F7DFD-8C53-4294-B21E-5EF1912E2CBF}|Domain\\Domain.csproj|solutionrelative:domain\\matches\\matchset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C5F7DFD-8C53-4294-B21E-5EF1912E2CBF}|Domain\\Domain.csproj|b:\\fly_high-web_application\\flyhigh\\domain\\matches\\matchroster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C5F7DFD-8C53-4294-B21E-5EF1912E2CBF}|Domain\\Domain.csproj|solutionrelative:domain\\matches\\matchroster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C5F7DFD-8C53-4294-B21E-5EF1912E2CBF}|Domain\\Domain.csproj|b:\\fly_high-web_application\\flyhigh\\domain\\matches\\matchrosterentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C5F7DFD-8C53-4294-B21E-5EF1912E2CBF}|Domain\\Domain.csproj|solutionrelative:domain\\matches\\matchrosterentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C5F7DFD-8C53-4294-B21E-5EF1912E2CBF}|Domain\\Domain.csproj|b:\\fly_high-web_application\\flyhigh\\domain\\matches\\matchrosterentryid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C5F7DFD-8C53-4294-B21E-5EF1912E2CBF}|Domain\\Domain.csproj|solutionrelative:domain\\matches\\matchrosterentryid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C5F7DFD-8C53-4294-B21E-5EF1912E2CBF}|Domain\\Domain.csproj|b:\\fly_high-web_application\\flyhigh\\domain\\matches\\matchsetid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C5F7DFD-8C53-4294-B21E-5EF1912E2CBF}|Domain\\Domain.csproj|solutionrelative:domain\\matches\\matchsetid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C5F7DFD-8C53-4294-B21E-5EF1912E2CBF}|Domain\\Domain.csproj|b:\\fly_high-web_application\\flyhigh\\domain\\matches\\matchenums\\matchstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C5F7DFD-8C53-4294-B21E-5EF1912E2CBF}|Domain\\Domain.csproj|solutionrelative:domain\\matches\\matchenums\\matchstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C5F7DFD-8C53-4294-B21E-5EF1912E2CBF}|Domain\\Domain.csproj|b:\\fly_high-web_application\\flyhigh\\domain\\users\\userid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C5F7DFD-8C53-4294-B21E-5EF1912E2CBF}|Domain\\Domain.csproj|solutionrelative:domain\\users\\userid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C5F7DFD-8C53-4294-B21E-5EF1912E2CBF}|Domain\\Domain.csproj|b:\\fly_high-web_application\\flyhigh\\domain\\matches\\matchrosterid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C5F7DFD-8C53-4294-B21E-5EF1912E2CBF}|Domain\\Domain.csproj|solutionrelative:domain\\matches\\matchrosterid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C5F7DFD-8C53-4294-B21E-5EF1912E2CBF}|Domain\\Domain.csproj|b:\\fly_high-web_application\\flyhigh\\domain\\events\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C5F7DFD-8C53-4294-B21E-5EF1912E2CBF}|Domain\\Domain.csproj|solutionrelative:domain\\events\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C5F7DFD-8C53-4294-B21E-5EF1912E2CBF}|Domain\\Domain.csproj|b:\\fly_high-web_application\\flyhigh\\domain\\teams\\teammemberid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C5F7DFD-8C53-4294-B21E-5EF1912E2CBF}|Domain\\Domain.csproj|solutionrelative:domain\\teams\\teammemberid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C5F7DFD-8C53-4294-B21E-5EF1912E2CBF}|Domain\\Domain.csproj|b:\\fly_high-web_application\\flyhigh\\domain\\teams\\teammember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C5F7DFD-8C53-4294-B21E-5EF1912E2CBF}|Domain\\Domain.csproj|solutionrelative:domain\\teams\\teammember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MatchRosterEntry.cs",
+              "DocumentMoniker": "B:\\Fly_High-Web_Application\\FlyHigh\\Domain\\Matches\\MatchRosterEntry.cs",
+              "RelativeDocumentMoniker": "Domain\\Matches\\MatchRosterEntry.cs",
+              "ToolTip": "B:\\Fly_High-Web_Application\\FlyHigh\\Domain\\Matches\\MatchRosterEntry.cs",
+              "RelativeToolTip": "Domain\\Matches\\MatchRosterEntry.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T14:56:36.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Match.cs",
+              "DocumentMoniker": "B:\\Fly_High-Web_Application\\FlyHigh\\Domain\\Matches\\Match.cs",
+              "RelativeDocumentMoniker": "Domain\\Matches\\Match.cs",
+              "ToolTip": "B:\\Fly_High-Web_Application\\FlyHigh\\Domain\\Matches\\Match.cs",
+              "RelativeToolTip": "Domain\\Matches\\Match.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF8AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T23:13:37.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MatchRosterEntryId.cs",
+              "DocumentMoniker": "B:\\Fly_High-Web_Application\\FlyHigh\\Domain\\Matches\\MatchRosterEntryId.cs",
+              "RelativeDocumentMoniker": "Domain\\Matches\\MatchRosterEntryId.cs",
+              "ToolTip": "B:\\Fly_High-Web_Application\\FlyHigh\\Domain\\Matches\\MatchRosterEntryId.cs",
+              "RelativeToolTip": "Domain\\Matches\\MatchRosterEntryId.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T14:56:58.607Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserId.cs",
+              "DocumentMoniker": "B:\\Fly_High-Web_Application\\FlyHigh\\Domain\\Users\\UserId.cs",
+              "RelativeDocumentMoniker": "Domain\\Users\\UserId.cs",
+              "ToolTip": "B:\\Fly_High-Web_Application\\FlyHigh\\Domain\\Users\\UserId.cs",
+              "RelativeToolTip": "Domain\\Users\\UserId.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T13:33:42.2Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MatchSetId.cs",
+              "DocumentMoniker": "B:\\Fly_High-Web_Application\\FlyHigh\\Domain\\Matches\\MatchSetId.cs",
+              "RelativeDocumentMoniker": "Domain\\Matches\\MatchSetId.cs",
+              "ToolTip": "B:\\Fly_High-Web_Application\\FlyHigh\\Domain\\Matches\\MatchSetId.cs",
+              "RelativeToolTip": "Domain\\Matches\\MatchSetId.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T13:32:52.39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MatchRoster.cs",
+              "DocumentMoniker": "B:\\Fly_High-Web_Application\\FlyHigh\\Domain\\Matches\\MatchRoster.cs",
+              "RelativeDocumentMoniker": "Domain\\Matches\\MatchRoster.cs",
+              "ToolTip": "B:\\Fly_High-Web_Application\\FlyHigh\\Domain\\Matches\\MatchRoster.cs",
+              "RelativeToolTip": "Domain\\Matches\\MatchRoster.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T23:17:18.715Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MatchRosterId.cs",
+              "DocumentMoniker": "B:\\Fly_High-Web_Application\\FlyHigh\\Domain\\Matches\\MatchRosterId.cs",
+              "RelativeDocumentMoniker": "Domain\\Matches\\MatchRosterId.cs",
+              "ToolTip": "B:\\Fly_High-Web_Application\\FlyHigh\\Domain\\Matches\\MatchRosterId.cs",
+              "RelativeToolTip": "Domain\\Matches\\MatchRosterId.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T23:25:23.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TeamMemberId.cs",
+              "DocumentMoniker": "B:\\Fly_High-Web_Application\\FlyHigh\\Domain\\Teams\\TeamMemberId.cs",
+              "RelativeDocumentMoniker": "Domain\\Teams\\TeamMemberId.cs",
+              "ToolTip": "B:\\Fly_High-Web_Application\\FlyHigh\\Domain\\Teams\\TeamMemberId.cs",
+              "RelativeToolTip": "Domain\\Teams\\TeamMemberId.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T23:21:12.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "TeamMember.cs",
+              "DocumentMoniker": "B:\\Fly_High-Web_Application\\FlyHigh\\Domain\\Teams\\TeamMember.cs",
+              "RelativeDocumentMoniker": "Domain\\Teams\\TeamMember.cs",
+              "ToolTip": "B:\\Fly_High-Web_Application\\FlyHigh\\Domain\\Teams\\TeamMember.cs",
+              "RelativeToolTip": "Domain\\Teams\\TeamMember.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T23:18:42.061Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MatchStatus.cs",
+              "DocumentMoniker": "B:\\Fly_High-Web_Application\\FlyHigh\\Domain\\Matches\\MatchEnums\\MatchStatus.cs",
+              "RelativeDocumentMoniker": "Domain\\Matches\\MatchEnums\\MatchStatus.cs",
+              "ToolTip": "B:\\Fly_High-Web_Application\\FlyHigh\\Domain\\Matches\\MatchEnums\\MatchStatus.cs",
+              "RelativeToolTip": "Domain\\Matches\\MatchEnums\\MatchStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T14:46:53.903Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MatchSet.cs",
+              "DocumentMoniker": "B:\\Fly_High-Web_Application\\FlyHigh\\Domain\\Matches\\MatchSet.cs",
+              "RelativeDocumentMoniker": "Domain\\Matches\\MatchSet.cs",
+              "ToolTip": "B:\\Fly_High-Web_Application\\FlyHigh\\Domain\\Matches\\MatchSet.cs",
+              "RelativeToolTip": "Domain\\Matches\\MatchSet.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAYwDkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T13:34:00.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Event.cs",
+              "DocumentMoniker": "B:\\Fly_High-Web_Application\\FlyHigh\\Domain\\Events\\Event.cs",
+              "RelativeDocumentMoniker": "Domain\\Events\\Event.cs",
+              "ToolTip": "B:\\Fly_High-Web_Application\\FlyHigh\\Domain\\Events\\Event.cs",
+              "RelativeToolTip": "Domain\\Events\\Event.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T23:16:56.78Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

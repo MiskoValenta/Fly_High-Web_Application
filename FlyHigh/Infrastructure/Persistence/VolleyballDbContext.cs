@@ -1,11 +1,13 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Domain.Users;
+using Domain.Teams;
 
 namespace Infrastructure.Persistence;
 
 public class VolleyballDbContext : DbContext
 {
   public DbSet<User> Users => Set<User>();
+  public DbSet<Team> Teams => Set<Team>();
 
   public VolleyballDbContext(DbContextOptions<VolleyballDbContext> options)
     : base(options)

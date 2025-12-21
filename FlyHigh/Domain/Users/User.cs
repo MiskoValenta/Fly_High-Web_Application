@@ -6,7 +6,7 @@ namespace Domain.Users;
 
 public class User
 {
-  public Guid Id { get; private set; }
+  public UserId Id { get; private set; }
   public string FirstName { get; private set; } = string.Empty;
   public string LastName { get; private set; } = string.Empty;
   public string Email { get; private set; } = string.Empty;
@@ -16,19 +16,18 @@ public class User
   private User() { }
 
   private User(
-      Guid id,
+      UserId id,
       string firstName,
       string lastName,
       string email,
-      string hashedPassword,
-      DateTime createdAt)
+      string hashedPassword)
   {
     Id = id;
     FirstName = firstName;
     LastName = lastName;
     Email = email;
     HashedPassword = hashedPassword;
-    CreatedAt = createdAt;
+    CreatedAt = DateTime.UtcNow;
   }
 
   public static User Create(
@@ -38,12 +37,11 @@ public class User
       string hashedPassword)
   {
     return new User(
-        Guid.NewGuid(),
+        UserId.New(),
         firstName,
         lastName,
         email,
-        hashedPassword,
-        DateTime.UtcNow
+        hashedPassword
     );
   }
 

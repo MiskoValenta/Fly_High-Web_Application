@@ -6,7 +6,7 @@ namespace Domain.Users;
 
 public interface IUserRepository
 {
-  Task<User?> GetByIdAsync(Guid Id);
+  Task<User?> GetByIdAsync(UserId Id);
   Task<User?> GetByEmailAsync(string email);
 
   Task<bool> ExistsByEmailAsync(string email);
