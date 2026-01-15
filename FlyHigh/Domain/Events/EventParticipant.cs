@@ -1,4 +1,5 @@
-﻿using Domain.Users;
+﻿using Domain.Events.EventEnums;
+using Domain.Users;
 using System;
 using System.Collections.Generic;
 using System.Text;

@@ -1,0 +1,15 @@
+B:\Fly_High-Web_Application\FlyHigh\Domain\obj\Debug\net10.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+B:\Fly_High-Web_Application\FlyHigh\Domain\obj\Debug\net10.0\Domain.AssemblyInfoInputs.cache
+B:\Fly_High-Web_Application\FlyHigh\Domain\obj\Debug\net10.0\Domain.AssemblyInfo.cs
+B:\Fly_High-Web_Application\FlyHigh\Domain\obj\Debug\net10.0\Domain.csproj.CoreCompileInputs.cache
+B:\Fly_High-Web_Application\FlyHigh\Domain\obj\Debug\net10.0\Domain.sourcelink.json
+B:\Fly_High-Web_Application\FlyHigh\Domain\bin\Debug\net10.0\Domain.deps.json
+B:\Fly_High-Web_Application\FlyHigh\Domain\bin\Debug\net10.0\Domain.dll
+B:\Fly_High-Web_Application\FlyHigh\Domain\bin\Debug\net10.0\Domain.pdb
+B:\Fly_High-Web_Application\FlyHigh\Domain\obj\Debug\net10.0\Domain.dll
+B:\Fly_High-Web_Application\FlyHigh\Domain\obj\Debug\net10.0\refint\Domain.dll
+B:\Fly_High-Web_Application\FlyHigh\Domain\obj\Debug\net10.0\Domain.pdb
+B:\Fly_High-Web_Application\FlyHigh\Domain\obj\Debug\net10.0\ref\Domain.dll
+B:\Fly_High-Web_Application\FlyHigh\Domain\bin\Debug\net10.0\Domain.runtimeconfig.json
+B:\Fly_High-Web_Application\FlyHigh\Domain\obj\Debug\net10.0\Domain.csproj.AssemblyReference.cache
+B:\Fly_High-Web_Application\FlyHigh\Domain\obj\Debug\net10.0\Domain.genruntimeconfig.cache

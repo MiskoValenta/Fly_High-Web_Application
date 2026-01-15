@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Domain.Common;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Domain.Events;
 
-public readonly record struct EventId(Guid Value)
+public record EventId(Guid Value) : StronglyTypedId(Value)
 {
   public static EventId New() => new(Guid.NewGuid());
 }

@@ -1,4 +1,6 @@
-﻿using Domain.Matches;
+﻿using Domain.Common;
+using Domain.Events.EventEnums;
+using Domain.Matches;
 using Domain.Teams;
 using Domain.Users;
 using System;
@@ -7,14 +9,12 @@ using System.Text;
 
 namespace Domain.Events;
 
-public class Event
+public class Event : AuditableEntity<EventId>
 {
   private readonly List<EventParticipant> _participants = new();
 
-  public IReadOnlyCollection<EventParticipant> Participants =>
-    _participants.AsReadOnly();
+  public IReadOnlyCollection<EventParticipant> Participants => _participants.AsReadOnly();
 
-  public EventId Id { get; private set; }
   public TeamId TeamId { get; private set; }
   public MatchId? MatchId { get; private set; }
   public string Title { get; private set; } = string.Empty;
@@ -23,7 +23,6 @@ public class Event
   public UserId CreatedBy { get; private set; }
   public DateTime CreatedAt { get; private set; }
 
-  private Event() { }
   private Event(
     EventId id,
     TeamId teamId,
@@ -31,20 +30,21 @@ public class Event
     string title,
     string? description,
     EventType type,
-    UserId createdBy)
+    UserId createdBy,
+    DateTime createdAt) : base(id)
   {
     if (string.IsNullOrWhiteSpace(title))
       throw new ArgumentException("Event title is required");
 
-    Id = id;
     TeamId = teamId;
     MatchId = matchId;
     Title = title;
     Description = description;
     Type = type;
     CreatedBy = createdBy;
-    CreatedAt = DateTime.UtcNow;
+    CreatedAt = createdAt;
   }
+  private Event() { }
 
   public static Event Create(
     TeamId teamId,
@@ -61,7 +61,8 @@ public class Event
       title,
       description,
       type,
-      createdBy);
+      createdBy,
+      DateTime.UtcNow);
   }
 
   public void AddParticipant(UserId userId)

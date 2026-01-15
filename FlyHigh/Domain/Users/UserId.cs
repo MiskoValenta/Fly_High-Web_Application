@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Domain.Common;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Domain.Users;
 
-public readonly record struct UserId(Guid Value)
+public record UserId(Guid Value) : StronglyTypedId(Value)
 {
   public static UserId New() => new(Guid.NewGuid());
 }

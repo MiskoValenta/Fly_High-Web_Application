@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Domain.Common;
 
 namespace Domain.Matches;
 
-public readonly record struct MatchId(Guid Value)
+public record MatchId(Guid Value) : StronglyTypedId(Value)
 {
   public static MatchId New() => new(Guid.NewGuid());
 }

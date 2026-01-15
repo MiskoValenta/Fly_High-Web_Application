@@ -7,8 +7,8 @@ namespace Domain.Matches.MatchEnums;
 public enum MatchPosition
 {
   Setter,
-  Spiker,
-  Blocker,
-  Universal,
+  OutsideHitter,
+  MiddleBlocker,
+  Opposite,
   Libero
 }
