@@ -1,31 +1,32 @@
-﻿using System;
+﻿using Domain.Common;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Domain.Users;
 
-public class User
+public class User : AuditableEntity<UserId>
 {
-  public Guid Id { get; private set; }
   public string FirstName { get; private set; } = string.Empty;
   public string LastName { get; private set; } = string.Empty;
   public string Email { get; private set; } = string.Empty;
   public string HashedPassword { get; private set; } = string.Empty;
+  public DateTime? LastLogged { get; private set; }
   public DateTime CreatedAt { get; private set; }
 
   private User() { }
 
   private User(
-      Guid id,
+      UserId id,
       string firstName,
       string lastName,
       string email,
       string hashedPassword,
-      DateTime createdAt)
+      DateTime createdAt) : base(id)
   {
-    Id = id;
     FirstName = firstName;
     LastName = lastName;
+
     Email = email;
     HashedPassword = hashedPassword;
     CreatedAt = createdAt;
@@ -38,7 +39,7 @@ public class User
       string hashedPassword)
   {
     return new User(
-        Guid.NewGuid(),
+        UserId.New(),
         firstName,
         lastName,
         email,

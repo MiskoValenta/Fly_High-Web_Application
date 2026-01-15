@@ -32,7 +32,7 @@ public sealed class UserRepository : IUserRepository
       .FirstOrDefaultAsync(u => u.Email == email);
   }
 
-  public async Task<User?> GetByIdAsync(Guid Id)
+  public async Task<User?> GetByIdAsync(UserId Id)
   {
     return await _context.Users
       .FirstOrDefaultAsync(u => u.Id == Id);
