@@ -22,4 +22,10 @@
     <ProjectReference Include="..\Infrastructure\Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="MatchesController\" />
+    <Folder Include="EventsController\" />
+    <Folder Include="TeamsController\" />
+  </ItemGroup>
+
 </Project>

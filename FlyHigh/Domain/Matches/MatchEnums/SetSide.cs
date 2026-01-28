@@ -4,11 +4,8 @@ using System.Text;
 
 namespace Domain.Matches.MatchEnums;
 
-public enum MatchPosition
+public enum SetSide
 {
-  Setter = 1,
-  OutsideHitter = 2,
-  MiddleBlocker = 3,
-  Opposite = 4,
-  Libero = 5
+  Home,
+  Away
 }
