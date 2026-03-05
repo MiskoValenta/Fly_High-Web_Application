@@ -1,0 +1,31 @@
+/* app/Dashboard/Matches/Create/CreateMatch.css */
+.create-match-container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.create-match-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+    margin-top: var(--space-4);
+}
+
+.form-row {
+    display: flex;
+    gap: var(--space-4);
+}
+
+.half-width {
+    flex: 1;
+}
+
+/* Zbylé styly dědí z CreateTeam.css díky podobným class názvům, 
+   ale pro jistotu zde můžete redefinovat, pokud chcete odlišnosti */
+
+@media (max-width: 640px) {
+    .form-row {
+        flex-direction: column;
+        gap: var(--space-4);
+    }
+}

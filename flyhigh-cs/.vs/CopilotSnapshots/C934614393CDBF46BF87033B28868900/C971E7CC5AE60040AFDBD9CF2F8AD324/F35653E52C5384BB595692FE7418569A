@@ -1,0 +1,15 @@
+﻿using Application.DTOs.Teams;
+using Domain.Entities.Teams.TeamEnums;
+using Domain.Value_Objects.Teams;
+using Domain.Value_Objects.Users;
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Application.Services.Teams;
+
+public interface ITeamService
+{
+  Task<Guid> CreateTeamAsync(CreateTeamDto dto, Guid currentUserId);
+  Task<List<TeamResponseDto>> GetUserTeamsAsync(Guid currentUserId, CancellationToken cancellationToken = default);
+}

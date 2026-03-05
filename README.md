@@ -1,91 +1,150 @@
-<h1>Maturitní projekt "Fly High"</h1>
-- Cíl práce: Webová aplikace o zápisech volejbalových zápasů, zapsání hráčů k týmům  ankety k tréninkům a zápasům </br>
-- Vedoucí práce: Mgr. Pavlína Mihačová
+# PVA4 - Programování a vývoj aplikací
+## MaturitniApp - Praktická část závěrečné maturitní práce
 
-# Fly_High-Web_Application
+Tento repozitář je **pracovní prostor pro praktickou část** závěrečné maturitní práce z předmětu Programování a vývoj aplikací.
 
-## 🚀 Jak spustit projekt lokálně
-
-### Požadavky
-- Mít nainstalovaný Git  
-- Mít nainstalovaný Node.js a balíčkovacího manažera (npm / yarn) (aspoň verzi doporučenou pro Next.js).  [oai_citation:0‡nextjs.org](https://nextjs.org/docs/app/getting-started/installation?utm_source=chatgpt.com)
+👉 Nejdůležitější dokument: **`zadani.md`** (musí být vyplněný).
 
 ---
 
-## 1. Naklonovat repozitář
+## Povinné minimum pro všechny projekty
+Každý projekt musí obsahovat:
 
-V terminálu spusť:
+### Databáze
+- Aplikace pracuje s databází (MySQL/MariaDB).
+- Databáze obsahuje **minimálně 5 tabulek**.
+- Jedna z tabulek je `users` (uživatelské účty).
 
-```bash
-git clone https://github.com/MiskoValenta/Fly_High-Web_Application.git
-```
+### Uživatelské účty
+- Registrace uživatele (unikátní e-mail/login).
+- Přihlášení a odhlášení.
+- Hesla jsou ukládána pouze jako **hash** (nikdy ne v prostém textu).
 
-Tím tento repozitář stáhneš do složky `Fly_High-Web_Application`.  [oai_citation:1‡GitHub Docs](https://docs.github.com/articles/cloning-a-repository?utm_source=chatgpt.com)
+### Funkčnost aplikace
+- Aplikace obsahuje **CRUD** nad hlavní doménovou entitou (tu popíšeš v `zadani.md`).
+- Aplikace má jasně oddělené části pro nepřihlášeného a přihlášeného uživatele (chráněné stránky/akce).
 
-Pokud chceš rovnou klonovat do aktuální složky:
+### Bezpečnost a validace
+- Vstupy od uživatele jsou validované (prázdné hodnoty, formát, délky).
+- Databázové dotazy jsou realizovány přes **prepared statements** (ochrana proti SQL Injection).
+- Výstupy jsou ošetřené proti **XSS** (escape při výpisu do HTML).
 
-```bash
-git clone https://github.com/MiskoValenta/Fly_High-Web_Application.git .
-```
-
----
-
-## 2. Otevřít projekt ve správné cestě
-
-Přejdi do složky, kam se projekt stáhl:
-
-```bash
-cd Fly_High-Web_Application
-```
-
-Pokud máš více podsložek (např. `fly_high_next` — podle struktury repozitáře), přejdi do té, která obsahuje Next.js kód. Např.:
-
-```bash
-cd fly_high_next
-```
+### Dokumentace
+- Repo obsahuje návod „Jak spustit projekt“ (viz níže).
+- Repo obsahuje přihlašovací údaje pro testování (nebo postup, jak je vytvořit).
 
 ---
 
-## 3. Instalace závislostí
+## Pravidla práce
+- Pracuj **průběžně**, ne jednorázově.
+- Commity musí mít **smysluplné zprávy** a musí být z nich vidět postup.
+- Praktická část musí odpovídat tvému zadání v `zadani.md`.
 
-V kořenové složce Next.js projektu spusť:
-
-```bash
-npm install
-```
-
-(nebo `yarn install`, pokud používáš yarn). Tím nainstaluješ všechny závislosti definované v `package.json`.  [oai_citation:2‡Stack Overflow](https://stackoverflow.com/questions/75195648/how-do-i-run-next-js-app-after-cloning-repository?utm_source=chatgpt.com)
-
-Pokud by instalace narazila na chyby s „peer dependencies“, může pomoci:
-
-```bash
-npm install --legacy-peer-deps
-```
+Doporučení:
+- Pro každou etapu pracuj v samostatné větvi `etapa-<cislo>-<tema>` a odevzdávej ji přes **Pull Request** do `main`.
 
 ---
 
-## 4. Spustit vývojový server
+## Odevzdávání (Git, commity, zákaz uploadu)
+Práci odevzdáváš **průběžně přes Git**. Cílem je, aby z historie repozitáře byl jasně vidět postup
+(co přibylo, co se opravilo, kdy ses posunul).
 
-Po úspěšné instalaci závislostí spusť:
+### Pravidla odevzdávání
+- Po dokončení **každé funkce / logického kroku** proveď commit (ne jeden commit na konci).
+- **Minimální očekávání:** alespoň **8–12 smysluplných commitů** rozložených v čase.
+- Každý commit musí mít **konkrétní zprávu** (např. `Create users table`, `Implement login`, `Add input validation`, `Add CRUD for orders`).
+- Commity dělej tak, aby byl projekt po každém commitu v rozumném stavu (ideálně spustitelný).
 
-```bash
-npm run dev
-```
+### Zákazy
+- Je zakázáno odevzdat projekt jako „hotové všechno najednou“ v jednom nebo pár commitech.
+- Je zakázáno nahrávat zdrojáky přes webové rozhraní GitHubu („Upload files“, editace souborů v prohlížeči).
+  Odevzdání musí probíhat přes Git z počítače (commit + push).
+- Pokud bude historie commitů nepoužitelná (např. 1–2 commity na konci nebo upload přes GitHub),
+  bude to hodnoceno jako **nesplnění požadavků na odevzdání**.
 
-(nebo `yarn dev`) — to spustí Next.js v režimu vývoje. Poté můžeš otevřít prohlížeč a jít na:
+---
 
-```
-http://localhost:3000
-```
+## Etapy (milníky) práce
+Práce bude kontrolovaná průběžně po etapách. Každá etapa se odevzdává jako **Pull Request**.
 
-— tam by měla běžet tvoje aplikace.  [oai_citation:3‡Stack Overflow](https://stackoverflow.com/questions/75195648/how-do-i-run-next-js-app-after-cloning-repository?utm_source=chatgpt.com)
+### Etapa 1: Zadání + návrh databáze
+Povinné výstupy:
+- Vyplněný `zadani.md` (název, cíl, technologie, funkční požadavky).
+- Návrh databáze: tabulky a vztahy (doporučeně do `doc/db.md`).
+- Seznam minimálně **5 tabulek**, včetně `users`.
+
+### Etapa 2: Spustitelný základ projektu
+Povinné výstupy:
+- Projekt jde spustit podle Vašeho návodu (XAMPP / lokální server).
+- Připojení na databázi je funkční.
+- Základní struktura aplikace (složky, routování / stránky).
+
+### Etapa 3: Registrace / přihlášení / odhlášení (společné pro všechny)
+Povinné výstupy:
+- Registrace uživatele (unikátní e-mail/login).
+- Přihlášení a odhlášení.
+- Hesla jsou ukládána jako **hash**.
+- Validace vstupů a smysluplné chybové hlášky (např. špatné heslo, neplatný e-mail).
+
+### Kde řešíš vlastní scope projektu (tvé zadání)
+Etapy 1–3 jsou záměrně **společné pro všechny**, aby měl každý projekt stejný technický základ (návrh DB, spustitelný projekt, registrace/přihlášení).
+
+**Tvoje vlastní funkce podle zadání v `zadani.md` začneš programovat hlavně od Etapy 4 dál:**
+- **Etapa 4 (CRUD hlavní entity)** – jádro tvé aplikace: doménová logika a práce s hlavní entitou (např. zakázky, rezervace, skladové položky, objednávky…).
+- **Etapa 5 (Oprávnění a ochrana přístupu)** – pravidla a procesy specifické pro tvůj projekt (např. role, stavy, schvalování, omezení akcí).
+- **Etapa 6 (Dokumentace a finalizace)** – dokončení individuálních funkcí ze zadání, doladění chyb a příprava projektu tak, aby šel snadno spustit a zkontrolovat.
+
+### Etapa 4: CRUD hlavní entity
+Povinné výstupy:
+- CRUD nad hlavní entitou dle zadání:
+  - vytvoření, seznam, detail, úprava, odstranění
+- Vyhledávání nebo filtrování (alespoň 1 parametr).
+
+### Etapa 5: Oprávnění a ochrana přístupu
+Povinné výstupy:
+- Nepřihlášený uživatel nemá přístup k chráněným částem aplikace.
+- Akce měnící data (create/update/delete) jsou chráněné (minimálně přihlášením).
+- (Dle zadání) role user/admin nebo ekvivalentní mechanismus oprávnění.
+
+### Etapa 6: Dokumentace a finalizace
+Povinné výstupy:
+- Dokončená dokumentace spuštění a testování (viz níže).
+- Export databáze nebo seed data pro snadné vyzkoušení.
+- Vyčištěný repozitář (žádná hesla, žádné dočasné soubory, přehledná struktura).
 
 ---
 
-## 5. Tipy a často se vyskytující chyby
+## Návod spuštění projektu (povinná kapitola)
+Do `README.md` nebo `doc/` doplň:
 
-- `node_modules/` obvykle není součástí repozitáře (ignorováno v `.gitignore`), proto je nutné vždy spustit `npm install` po klonování.  [oai_citation:4‡Stack Overflow](https://stackoverflow.com/questions/75195648/how-do-i-run-next-js-app-after-cloning-repository?utm_source=chatgpt.com)  
-- Ujisti se, že máš kompatibilní verzi Node.js (nejlépe doporučenou pro Next.js podle dokumentace).  [oai_citation:5‡nextjs.org](https://nextjs.org/docs/app/getting-started/installation?utm_source=chatgpt.com)  
-- Pokud přidáš nové závislosti nebo změníš `package.json`, znovu spusť `npm install`, než projekt spustíš.  
+- Požadavky (např. PHP 8.x, MySQL/MariaDB, XAMPP).
+- Postup instalace/spuštění krok za krokem:
+  - kam nakopírovat projekt / jak spustit server
+  - jak vytvořit databázi
+  - jak importovat strukturu a data (SQL soubor)
+- Přihlašovací údaje pro testování (nebo postup, jak vytvořit prvního uživatele).
 
 ---
+
+## Zadání
+Vyplň soubor **`zadani.md`**.
+
+### Ukázka funkčních požadavků (checklist)
+- [ ] Aplikace používá databázi s minimálně 5 tabulkami (včetně `users`).
+- [ ] Registrace uživatele pomocí e-mailu a hesla.
+- [ ] Přihlášení a odhlášení uživatele.
+- [ ] Nepřihlášený uživatel nemá přístup k chráněným částem aplikace.
+- [ ] CRUD nad hlavní entitou podle zadání (např. zakázky/rezervace/produkty…).
+- [ ] Vstupy jsou validované.
+- [ ] Dotazy do databáze jsou přes prepared statements.
+- [ ] Výstupy jsou ošetřené proti XSS.
+
+---
+
+## AI (pokud ji použiješ)
+Pokud použiješ AI nástroje, veď krátký záznam do `doc/ai-log.md`:
+- co jsi zadal (prompt),
+- co ti nástroj vrátil,
+- co jsi upravil a proč.
+
+Odpovědnost za výsledek je vždy na tobě.

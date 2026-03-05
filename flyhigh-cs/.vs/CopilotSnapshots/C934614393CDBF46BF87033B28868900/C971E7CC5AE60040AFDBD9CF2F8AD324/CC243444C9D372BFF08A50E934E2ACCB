@@ -1,0 +1,50 @@
+﻿using Application.DTOs.Teams;
+using Application.Interfaces.Teams;
+using Domain.Entities.Teams;
+using Domain.Entities.Teams.TeamEnums;
+using Domain.Repositories.Teams;
+using Domain.Value_Objects.Teams;
+using Domain.Value_Objects.Users;
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Application.Services.Teams;
+
+public class TeamService : ITeamService
+{
+  private readonly ITeamRepository _teamRepository;
+  private readonly ITeamAuthorizationService _auth;
+
+  public TeamService(
+    ITeamRepository teamRepository,
+    ITeamAuthorizationService auth)
+  {
+    _teamRepository = teamRepository;
+    _auth = auth;
+  }
+  public async Task<Guid> CreateTeamAsync(TeamDto dto, Guid currentUserId)
+  {
+    var ownerId = new UserId(currentUserId);
+
+    var team = Team.Create(ownerId, dto.TeamName, dto.ShortName, dto.Description);
+
+    await _teamRepository.AddAsync(team);
+    await _teamRepository.SaveChangesAsync();
+
+    return team.Id.Value;
+  }
+
+  public async Task<List<TeamResponseDto>> GetUserTeamsAsync(Guid currentUserId, CancellationToken cancellationToken = default)
+  {
+    var userId = new UserId(currentUserId);
+    var teams = await _teamRepository.GetUserTeamsAsync(userId, cancellationToken);
+
+    return teams.Select(t => new TeamResponseDto(
+        t.Id.Value,
+        t.TeamName,
+        t.ShortName,
+        t.GetRole(userId)?.ToString() ?? "Unknown"
+    )).ToList();
+  }
+}

@@ -1,19 +1,15 @@
 "use client";
 
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Link from "next/link";
-import { Button } from "@/components/ui/button"; // Předpokládám, že máš shadcn button
+import { Button } from "@/components/ui/button";
 import "@/app/globals.css";
 import "./Home.css";
 
-// Ikony pro dekoraci
 import {
     IoStatsChart,
     IoPeople,
-    IoCalendar,
-    IoTrophy,
     IoAnalytics,
-    IoChevronForward
 } from "react-icons/io5";
 import LoginModal from "@/app/Login/LoginModal";
 
@@ -22,10 +18,9 @@ export default function Hero() {
     const [isLoginOpen, setLoginOpen] = useState(false);
 
     return (
-        <section className="section-container">
+        <div className="section-container">
 
             <div className="HeroBackground">
-
                 <div className="FloatingElement Card-1">
                     <div className="MiniCardHeader">
                         <div className="MiniDot"></div>
@@ -55,9 +50,7 @@ export default function Hero() {
 
                 <div className="FloatingOrb Orb-1"></div>
                 <div className="FloatingOrb Orb-2"></div>
-
                 <div className="FloatingGrid"></div>
-
             </div>
 
             <div className="HeroContent">
@@ -78,10 +71,9 @@ export default function Hero() {
                             </Button>
                         </Link>
 
-
-                            <Button className="HeroBtn Secondary" onClick={() => setLoginOpen(true)}>
-                                Vstoupit do aplikace
-                            </Button>
+                        <Button className="HeroBtn Secondary" onClick={() => setLoginOpen(true)}>
+                            Vstoupit do aplikace
+                        </Button>
                     </div>
                 </div>
             </div>
@@ -91,6 +83,6 @@ export default function Hero() {
                 onClose={() => setLoginOpen(false)}
             />
 
-        </section>
+        </div>
     );
 }
