@@ -1,0 +1,110 @@
+/* app/Dashboard/Matches/Matches.css */
+.matches-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    margin-bottom: var(--space-4);
+}
+
+.matches-grid {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+}
+
+.match-card {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    padding: var(--space-4);
+    transition: transform 0.2s ease, border-color 0.2s;
+}
+
+.match-card:hover {
+    transform: translateX(4px);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.match-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: var(--space-2);
+    margin-bottom: var(--space-3);
+}
+
+.match-status-badge {
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: var(--meta);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Status Colors (MatchStatus Enum) */
+.status-0 {
+    background: rgba(56, 189, 248, 0.2);
+    color: #38bdf8;
+}
+
+/* Proposed */
+.status-3 {
+    background: rgba(245, 158, 11, 0.2);
+    color: #f59e0b;
+}
+
+/* Scheduled */
+.status-4 {
+    background: rgba(16, 185, 129, 0.2);
+    color: #10b981;
+}
+
+/* InProgress */
+.status-5 {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+/* Finished */
+
+.match-date {
+    font-size: var(--small);
+    color: var(--typo-ghost-color);
+}
+
+.match-teams {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--space-3);
+}
+
+.match-teams .team {
+    flex: 1;
+    font-size: var(--fs-h5);
+    text-align: center;
+}
+
+.match-teams .vs {
+    font-family: var(--font-rock-salt);
+    color: var(--primary);
+    margin: 0 var(--space-3);
+    font-size: var(--fs-h4);
+}
+
+.match-footer {
+    font-size: var(--small);
+    color: var(--typo-ghost-color);
+    text-align: right;
+}
+
+@media (max-width: 640px) {
+    .match-teams {
+        flex-direction: column;
+        gap: var(--space-2);
+    }
+}

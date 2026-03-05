@@ -1,0 +1,127 @@
+/* app/Dashboard/Matches/[matchId]/MatchDetail.css */
+.match-detail-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+}
+
+.match-detail-header {
+    padding: var(--space-5);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: var(--space-3);
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-4) 0;
+}
+
+.score-team {
+    flex: 1;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.03);
+    padding: var(--space-4);
+    border-radius: var(--radius-lg);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.score-team h3 {
+    color: var(--typo-ghost-color);
+    font-size: var(--small);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: var(--space-2);
+}
+
+.score-team p {
+    font-size: var(--fs-h4);
+    font-weight: 700;
+}
+
+.score-center {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-2);
+}
+
+.score-center .vs {
+    font-family: var(--font-rock-salt);
+    font-size: var(--fs-h2);
+    color: var(--primary);
+}
+
+.match-location,
+.match-date {
+    font-size: var(--small);
+    color: var(--typo-ghost-color);
+}
+
+.match-actions-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-top: var(--space-2);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: var(--space-4);
+}
+
+.action-group {
+    display: flex;
+    gap: var(--space-2);
+}
+
+.match-sets {
+    padding: var(--space-4);
+}
+
+.match-sets h2 {
+    font-size: var(--fs-h4);
+    margin-bottom: var(--space-3);
+}
+
+.sets-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+
+.set-row {
+    display: flex;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.05);
+    padding: var(--space-3);
+    border-radius: var(--radius-md);
+}
+
+@media (max-width: 768px) {
+    .scoreboard {
+        flex-direction: column;
+        gap: var(--space-4);
+    }
+
+    .score-team {
+        width: 100%;
+    }
+
+    .match-actions-bar {
+        flex-direction: column;
+        gap: var(--space-3);
+    }
+
+    .action-group button {
+        width: 100%;
+    }
+}

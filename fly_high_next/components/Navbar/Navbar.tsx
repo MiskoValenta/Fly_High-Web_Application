@@ -13,7 +13,7 @@ import Sidebar from "@/components/Sidebar/Sidebar";
 export const Navbar = () => {
 
     const [isLoginOpen, setLoginOpen] = useState(false);
-
+    
     return (
         <>
             <nav className="navbar">
@@ -36,7 +36,7 @@ export const Navbar = () => {
                     </div>
 
                     <div className="navbar-login">
-                        <ThemeToggle/>
+                        <ThemeToggle />
 
                         <Button
                             variant="default"

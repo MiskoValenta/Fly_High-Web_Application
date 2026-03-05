@@ -1,5 +1,5 @@
-import {IoLogoInstagram, IoLogoChrome} from "react-icons/io";
-import {IoLogoFacebook} from "react-icons/io5";
+import { IoLogoInstagram, IoLogoChrome } from "react-icons/io";
+import { IoLogoFacebook } from "react-icons/io5";
 import Link from "next/link";
 import Image from "next/image";
 import "./Footer.css";

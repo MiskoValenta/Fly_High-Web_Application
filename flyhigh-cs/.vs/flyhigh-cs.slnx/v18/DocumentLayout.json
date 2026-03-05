@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "B:\\Projects\\Maturita\\maturitniapp-MiskoValenta\\flyhigh-cs\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E54A8E90-0965-FCDC-D08E-F09A41A777B8}|flyhigh-cs\\API.csproj|b:\\projects\\maturita\\maturitniapp-miskovalenta\\flyhigh-cs\\flyhigh-cs\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54A8E90-0965-FCDC-D08E-F09A41A777B8}|flyhigh-cs\\API.csproj|solutionrelative:flyhigh-cs\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "B:\\Projects\\Maturita\\maturitniapp-MiskoValenta\\flyhigh-cs\\flyhigh-cs\\Program.cs",
+              "RelativeDocumentMoniker": "flyhigh-cs\\Program.cs",
+              "ToolTip": "B:\\Projects\\Maturita\\maturitniapp-MiskoValenta\\flyhigh-cs\\flyhigh-cs\\Program.cs",
+              "RelativeToolTip": "flyhigh-cs\\Program.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAgwFgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T07:14:51.012Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

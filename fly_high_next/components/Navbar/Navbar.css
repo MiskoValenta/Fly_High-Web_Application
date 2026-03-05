@@ -105,6 +105,7 @@
     transition: opacity 0.2s ease;
     transform: translatey(-2px);
 }
+
 .navbar-sidebar {
     display: none;
 }
@@ -113,6 +114,7 @@
     .navbar {
         display: none;
     }
+
     .navbar-sidebar {
         display: block;
     }
